@@ -1,1 +1,1 @@
-## Experiment name
+Image Correlation / Template Matching

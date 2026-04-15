@@ -2,37 +2,58 @@
   "version": 2.0,
   "questions": [
     {
-      "question": "This is a Sample Question 1?",
+      "question": "Template matching is used for:",
       "answers": {
-        "a": "answer1",
-        "b": "answer2",
-        "c": "answer3",
-        "d": "answer4"
+        "a": "Noise removal",
+        "b": "Object localization",
+        "c": "Thresholding",
+        "d": "Morphology"
       },
-      "explanations": {
-        "a": "Explanation 1  <a href='www.google.com'>here</a>",
-        "b": "Explanation 2",
-        "c": "Explanation 2",
-        "d": "Explanation 2"
-      },
-      "correctAnswer": "a",
+      "correctAnswer": "b",
       "difficulty": "beginner"
     },
     {
-      "question": "This is a Sample Question 2?",
+      "question": "Correlation output peak indicates:",
       "answers": {
-        "a": "answer1",
-        "b": "answer2",
-        "c": "answer3",
-        "d": "answer4"
+        "a": "Worst match",
+        "b": "Best match",
+        "c": "Noise region",
+        "d": "Blur kernel"
       },
-      "explanations": {
-        "a": "Explanation 1  <a href='www.google.com'>here</a>",
-        "b": "Explanation 2",
-        "c": "Explanation 2",
-        "d": "Explanation 2"
+      "correctAnswer": "b",
+      "difficulty": "beginner"
+    },
+    {
+      "question": "SQDIFF method selects:",
+      "answers": {
+        "a": "Maximum",
+        "b": "Minimum",
+        "c": "Zero only",
+        "d": "Random"
       },
-      "correctAnswer": "c",
+      "correctAnswer": "b",
+      "difficulty": "intermediate"
+    },
+    {
+      "question": "Normalized correlation helps with:",
+      "answers": {
+        "a": "Rotation invariance",
+        "b": "Illumination changes",
+        "c": "Removing noise",
+        "d": "Sharpening"
+      },
+      "correctAnswer": "b",
+      "difficulty": "intermediate"
+    },
+    {
+      "question": "Template matching is performed in:",
+      "answers": {
+        "a": "Spatial domain",
+        "b": "Color histogram",
+        "c": "Feature clustering",
+        "d": "Hough space"
+      },
+      "correctAnswer": "a",
       "difficulty": "beginner"
     }
   ]

@@ -1,13 +1,71 @@
-<!DOCTYPE html>
+<!doctype html>
 <html>
 <head>
-	<!-- Add CSS at the head of HTML file -->
-    <link rel="stylesheet" href="./css/main.css">
+<meta charset="UTF-8">
+<title>Experiment 5: Template Matching</title>
+<link rel="stylesheet" href="css/main.css" />
+  <script src="https://docs.opencv.org/4.x/opencv.js"></script>
+  <script src="js/main.js" defer></script>
 </head>
 <body>
-		<!-- Your code goes here-->
+<div class="app">
+<header class="topbar">
+<div>
+<h1>Experiment 5: Template Matching</h1>
+<p>Correlation-Based Object Localization</p>
+</div>
+<div class="status-pill">
+<span class="dot" id="statusDot"></span>
+<span id="statusText">Loading OpenCV...</span>
+</div>
+<button onclick="location.reload()">Reset</button>
+</header>
 
-	<!-- Add JS at the bottom of HTML file --> 
-        <script src="./js/main.js"></script>
+<main class="layout">
+<aside class="sidebar">
+
+<div class="card">
+<h3>Main Image</h3>
+<input type="file" id="mainInput">
+</div>
+
+<div class="card">
+<h3>Template Image</h3>
+<input type="file" id="templateInput">
+</div>
+
+<div class="card">
+<h3>Method</h3>
+<select id="methodSelect">
+<option value="0">SQDIFF</option>
+<option value="1">SQDIFF_NORMED</option>
+<option value="2">CCORR</option>
+<option value="3">CCORR_NORMED</option>
+<option value="4">CCOEFF</option>
+<option value="5">CCOEFF_NORMED</option>
+</select>
+<button id="runBtn">Run Matching</button>
+</div>
+
+<div class="card">
+<h3>Result Info</h3>
+<p>Score: <span id="scoreVal">-</span></p>
+<p>Location: <span id="locVal">-</span></p>
+<p id="infoMsg" style="color:#38bdf8;"></p>
+</div>
+
+</aside>
+
+<section class="workspace">
+<div class="canvas-row">
+<div class="canvas-card"><h4>Main</h4><canvas id="mainCanvas"></canvas></div>
+<div class="canvas-card"><h4>Template</h4><canvas id="templateCanvas"></canvas></div>
+<div class="canvas-card"><h4>Result</h4><canvas id="resultCanvas"></canvas></div>
+<div class="canvas-card"><h4>Correlation Map</h4><canvas id="corrCanvas"></canvas></div>
+</div>
+</section>
+
+</main>
+</div>
 </body>
 </html>
