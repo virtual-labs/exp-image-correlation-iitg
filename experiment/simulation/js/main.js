@@ -1,10 +1,24 @@
 window.Module = {
-onRuntimeInitialized() {
-document.getElementById("statusText").textContent="Ready";
-document.getElementById("statusDot").style.background="#22c55e";
-initApp();
-}
+
+    onRuntimeInitialized() {
+
+        document.getElementById("statusText").innerText = "Ready";
+
+        document.getElementById("statusDot").style.background = "#22c55e";
+
+        console.log("OpenCV Ready");
+
+        initApp();
+    }
+
 };
+// window.Module = {
+// onRuntimeInitialized() {
+// document.getElementById("statusText").textContent="Ready";
+// document.getElementById("statusDot").style.background="#22c55e";
+// initApp();
+// }
+// };
 
 function initApp(){
 
