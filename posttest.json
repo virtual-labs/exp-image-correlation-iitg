@@ -1,0 +1,60 @@
+{
+  "version": 2.0,
+  "questions": [
+    {
+      "question": "CCOEFF is robust against:",
+      "answers": {
+        "a": "Blur",
+        "b": "Brightness shift",
+        "c": "Salt noise",
+        "d": "Rotation"
+      },
+      "correctAnswer": "b",
+      "difficulty": "intermediate"
+    },
+    {
+      "question": "Template size too large causes:",
+      "answers": {
+        "a": "Faster matching",
+        "b": "Failure to localize",
+        "c": "Always better accuracy",
+        "d": "No effect"
+      },
+      "correctAnswer": "b",
+      "difficulty": "intermediate"
+    },
+    {
+      "question": "Correlation map is also called:",
+      "answers": {
+        "a": "Noise map",
+        "b": "Similarity map",
+        "c": "Edge map",
+        "d": "Warp map"
+      },
+      "correctAnswer": "b",
+      "difficulty": "beginner"
+    },
+    {
+      "question": "Best match in CCORR is:",
+      "answers": {
+        "a": "Minimum",
+        "b": "Maximum",
+        "c": "Median",
+        "d": "Zero"
+      },
+      "correctAnswer": "b",
+      "difficulty": "beginner"
+    },
+    {
+      "question": "Template matching assumes:",
+      "answers": {
+        "a": "Template appears exactly in scene",
+        "b": "Heavy rotation/scale",
+        "c": "No similarity",
+        "d": "Only text images"
+      },
+      "correctAnswer": "a",
+      "difficulty": "intermediate"
+    }
+  ]
+}
